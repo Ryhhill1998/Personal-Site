@@ -89,7 +89,7 @@ const App = () => {
               </div>
 
               <div>
-                <h3>Frontend Developer</h3>
+                <h3>Backend Developer</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod.
@@ -98,12 +98,12 @@ const App = () => {
 
               <div>
                 <h4>Languages</h4>
-                <p>JavaScript, HTML, CSS, SASS</p>
+                <p>JavaScript</p>
               </div>
 
               <div>
                 <h4>Frameworks</h4>
-                <p>React Js, jQuery</p>
+                <p>Node Js</p>
               </div>
             </div>
 

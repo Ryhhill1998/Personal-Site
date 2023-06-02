@@ -2,6 +2,7 @@
 
 :root {
   --primary-theme: #146c94;
+  --secondary-theme: #19a7ce;
 }
 
 * {
@@ -19,4 +20,10 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

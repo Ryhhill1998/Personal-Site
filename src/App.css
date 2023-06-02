@@ -1,15 +1,20 @@
+/* HEADER AND NAV */
 header {
-  padding: 1.5em 0;
+  padding: 1em 0;
+  position: fixed;
+  /* background-color: white; */
+  width: 100%;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
 .logo {
-  border: solid 3px var(--primary-theme);
+  border: solid 2px white;
   border-radius: 0.4em;
   position: relative;
   display: flex;
@@ -17,13 +22,13 @@ nav {
   align-items: center;
   width: 50px;
   height: 50px;
-  color: var(--primary-theme);
+  color: white;
 }
 
 .logo .number {
   position: absolute;
   top: 0.1em;
-  left: 0.1em;
+  left: 0.25em;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -40,6 +45,35 @@ nav {
 }
 
 .nav-links li {
-  color: var(--primary-theme);
+  color: white;
   font-weight: 500;
+}
+
+/* MAIN */
+.intro .background-image {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  /* max-width: 2000px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Patua One", cursive;
+  color: #afd3e2;
+}
+
+.intro .background-image p {
+  font-size: 1.5rem;
+  font-family: "Patua One", cursive;
+  color: white;
 }

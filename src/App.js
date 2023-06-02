@@ -1,6 +1,6 @@
 import "./App.css";
 
-import profileImgSrc from "./images/profile.JPG";
+import profileImgSrc from "./images/profile.jpg";
 
 const App = () => {
   return (
@@ -23,13 +23,20 @@ const App = () => {
 
       <main>
         <section className="intro">
-          <div>
-            <h1>Hi! I'm Ryan</h1>
-            <p>I’m a Computer Science MSc student at Newcastle University</p>
-            <button>Read more</button>
-          </div>
+          <div
+            className="background-image"
+            style={{
+              backgroundImage: `
+              linear-gradient( rgba(0, 0, 0, 0.7), 
+              rgba(0, 0, 0, 0.55) ), 
+              url(${profileImgSrc})
+              `,
+            }}
+          >
+            <h1>Ryan Henzell-Hill</h1>
 
-          <img src={profileImgSrc} />
+            <p>Designer, Developer, Student</p>
+          </div>
         </section>
       </main>
     </div>

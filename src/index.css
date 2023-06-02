@@ -2,7 +2,8 @@
 
 :root {
   --primary-theme: #146c94;
-  --secondary-theme: #19a7ce;
+  --secondary-theme: #afd3e2;
+  --tertiary-theme: #19a7ce;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 

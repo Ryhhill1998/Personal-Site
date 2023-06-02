@@ -133,55 +133,77 @@ const App = () => {
           </div>
         </section>
 
-        <section id="journey" className="journey container">
-          <h2>My Programming Journey</h2>
+        <section id="journey" className="journey">
+          <div className="container">
+            <h2>My Programming Journey</h2>
 
-          <div className="timeline">
-            <div className="row">
-              <div className="date-container container-lhs">
-                <span>June 2021</span>
-              </div>
+            <div className="timeline">
+              <div className="row">
+                <div className="date-container container-lhs">
+                  <span>June 2021</span>
 
-              <div className="content-container container-rhs">
-                <div>
-                  <h3>Durham University</h3>
+                  <div className="timeline-indicator"></div>
+                  <div className="timeline-end"></div>
                 </div>
-              </div>
-            </div>
 
-            <div className="row">
-              <div className="content-container container-lhs">
-                <div>
-                  <h3>Helena Biosciences</h3>
-                </div>
-              </div>
-
-              <div className="date-container container-rhs">
-                <span>July 2021</span>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="date-container container-lhs">
-                <span>September 2022</span>
-              </div>
-
-              <div className="content-container container-rhs">
-                <div>
-                  <h3>Newcastle University</h3>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="content-container container-lhs">
-                <div>
-                  <h3>Lloyds Banking Group</h3>
+                <div className="content-container container-rhs">
+                  <div>
+                    <h3>Durham University</h3>
+                    <p>Chemistry BSc (Hons) Classification: 1st</p>
+                    <p>Learned basic Excel skills</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="date-container container-rhs">
-                <span>September 2023</span>
+              <div className="row">
+                <div className="content-container container-lhs">
+                  <div>
+                    <h3>Helena Biosciences</h3>
+                    <p>Technical Support Administrator</p>
+                    <p>Learned VBA and Python to enhance productivity</p>
+                  </div>
+                </div>
+
+                <div className="date-container container-rhs">
+                  <span>July 2021</span>
+
+                  <div className="timeline-indicator"></div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="date-container container-lhs">
+                  <span>September 2022</span>
+
+                  <div className="timeline-indicator"></div>
+                </div>
+
+                <div className="content-container container-rhs">
+                  <div>
+                    <h3>Newcastle University</h3>
+                    <p>Computer Science MSc Classification: Distinction</p>
+                    <p>
+                      Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
+                      Computer Networks
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="content-container container-lhs">
+                  <div>
+                    <h3>Lloyds Banking Group</h3>
+                    <p>Technology Engineering Graduate</p>
+                  </div>
+                </div>
+
+                <div className="date-container container-rhs">
+                  <span>September 2023</span>
+
+                  <div className="timeline-indicator"></div>
+                  <div className="timeline-end"></div>
+                </div>
               </div>
             </div>
           </div>

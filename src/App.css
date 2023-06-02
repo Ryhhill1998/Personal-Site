@@ -2,6 +2,7 @@
 header {
   padding: 1em 0;
   position: fixed;
+  z-index: 10;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
 }
@@ -113,8 +114,14 @@ nav {
   font-size: 1.5rem;
 }
 
+.journey {
+  background-color: #ebf3f7;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
 .journey .timeline {
-  /* display: flex; */
+  margin-top: 4em;
 }
 
 .journey .timeline .row {
@@ -126,16 +133,60 @@ nav {
   padding: 2em;
   display: flex;
   align-items: center;
-  border: solid 1px red;
 }
 
-.container-lhs {
+.journey .row .container-lhs {
   justify-content: end;
-  border-right: solid 2px grey;
+  border-right: solid 6px var(--primary-theme);
+  position: relative;
+}
+
+.journey .row .container-rhs {
+  position: relative;
+}
+
+.journey .row .container-lhs .timeline-indicator {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: solid 4px var(--primary-theme);
+  background-color: white;
+  position: absolute;
+  right: -18px;
+}
+
+.journey .row .container-rhs .timeline-indicator {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: solid 4px var(--primary-theme);
+  background-color: white;
+  position: absolute;
+  left: -18px;
+}
+
+.journey .row .timeline-end {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-theme);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.journey .row .container-lhs .timeline-end {
+  right: -11px;
+  bottom: 98%;
+}
+
+.journey .row .container-rhs .timeline-end {
+  left: -11px;
+  top: 98%;
 }
 
 .journey .row .content-container > div {
-  border: solid 1px grey;
+  background-color: white;
+  border-radius: 0.5em;
+  text-align: left;
   padding: 1em;
 }
 
@@ -145,6 +196,7 @@ h1 {
   font-family: "Patua One", cursive;
   color: white;
   letter-spacing: 0.05rem;
+  text-align: center;
 }
 
 h2 {
@@ -152,6 +204,7 @@ h2 {
   font-weight: 600;
   color: var(--primary-theme);
   margin-bottom: 1em;
+  text-align: center;
 }
 
 h3 {

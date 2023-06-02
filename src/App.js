@@ -66,7 +66,7 @@ const App = () => {
 
               <div>
                 <h3>Frontend Developer</h3>
-                <p>
+                <p className="description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod.
                 </p>
@@ -90,7 +90,7 @@ const App = () => {
 
               <div>
                 <h3>Backend Developer</h3>
-                <p>
+                <p className="description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod.
                 </p>
@@ -114,7 +114,7 @@ const App = () => {
 
               <div>
                 <h3>iOS Developer</h3>
-                <p>
+                <p className="description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod.
                 </p>

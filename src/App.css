@@ -79,6 +79,10 @@ nav {
   padding-bottom: 4em;
 }
 
+.about h2 {
+  color: var(--primary-theme);
+}
+
 .about > p {
   width: 60%;
   margin: 0 auto 5em;
@@ -115,7 +119,7 @@ nav {
 }
 
 .about .cards-container .card .icon-container .icon {
-  color: var(--tertiary-theme);
+  color: var(--primary-theme);
   font-size: 1.5rem;
 }
 

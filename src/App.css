@@ -1,5 +1,11 @@
 header {
-  padding: 0.5em;
+  padding: 1.5em 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -25,4 +31,15 @@ header {
 .logo .letter {
   font-family: "Patua One", cursive;
   font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links li {
+  color: var(--primary-theme);
+  font-weight: 500;
 }

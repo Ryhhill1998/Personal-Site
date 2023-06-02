@@ -132,6 +132,60 @@ const App = () => {
             </div>
           </div>
         </section>
+
+        <section id="journey" className="journey container">
+          <h2>My Programming Journey</h2>
+
+          <div className="timeline">
+            <div className="row">
+              <div className="date-container container-lhs">
+                <span>June 2021</span>
+              </div>
+
+              <div className="content-container container-rhs">
+                <div>
+                  <h3>Durham University</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="content-container container-lhs">
+                <div>
+                  <h3>Helena Biosciences</h3>
+                </div>
+              </div>
+
+              <div className="date-container container-rhs">
+                <span>July 2021</span>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="date-container container-lhs">
+                <span>September 2022</span>
+              </div>
+
+              <div className="content-container container-rhs">
+                <div>
+                  <h3>Newcastle University</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="content-container container-lhs">
+                <div>
+                  <h3>Lloyds Banking Group</h3>
+                </div>
+              </div>
+
+              <div className="date-container container-rhs">
+                <span>September 2023</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

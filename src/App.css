@@ -74,7 +74,8 @@ nav {
 
 .about {
   text-align: center;
-  padding: 4em 0;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .about > p {
@@ -84,7 +85,7 @@ nav {
 
 .about .cards-container {
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
 
 .about .cards-container .card {
@@ -110,6 +111,32 @@ nav {
 .about .cards-container .card .icon-container .icon {
   color: var(--primary-theme);
   font-size: 1.5rem;
+}
+
+.journey .timeline {
+  /* display: flex; */
+}
+
+.journey .timeline .row {
+  display: flex;
+}
+
+.journey .row > div {
+  flex-basis: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  border: solid 1px red;
+}
+
+.container-lhs {
+  justify-content: end;
+  border-right: solid 2px grey;
+}
+
+.journey .row .content-container > div {
+  border: solid 1px grey;
+  padding: 1em;
 }
 
 /* HEADINGS */

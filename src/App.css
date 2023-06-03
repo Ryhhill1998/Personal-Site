@@ -235,6 +235,7 @@ section {
 .projects .previews-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -242,6 +243,30 @@ section {
   flex-basis: 32%;
   border-radius: 0.5em;
   overflow: hidden;
+  cursor: pointer;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .previews-container .preview span {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.projects .previews-container .preview:hover img {
+  opacity: 0.3;
+}
+
+.projects .previews-container .preview:hover span {
+  visibility: visible;
 }
 
 .cta {

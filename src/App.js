@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
+  faArrowUpRightFromSquare,
   faCode,
   faEnvelope,
   faServer,
@@ -263,17 +264,53 @@ const App = () => {
           </p>
 
           <div className="previews-container">
-            <div className="preview">
+            <a
+              href="https://food-fiesta-web-app.netlify.app"
+              target="_blank"
+              className="preview"
+            >
               <img src={foodFiestaPreview} />
-            </div>
 
-            <div className="preview">
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Food Fiesta Web App
+              </span>
+            </a>
+
+            <a
+              href="https://rrsportsmassage.netlify.app/"
+              target="_blank"
+              className="preview"
+            >
               <img src={websitePreview} />
-            </div>
 
-            <div className="preview">
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Sports Massage Website
+              </span>
+            </a>
+
+            <a
+              href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
+              target="_blank"
+              className="preview"
+            >
               <img src={pawnsOnlyChessPreview} />
-            </div>
+
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Pawns Only Chess Game
+              </span>
+            </a>
           </div>
         </section>
 

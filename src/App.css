@@ -422,6 +422,14 @@ h4 {
   .about .cards-container .card {
     flex-basis: 100%;
   }
+
+  .intro .background-image p {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
 }
 
 @media (max-width: 500px) {

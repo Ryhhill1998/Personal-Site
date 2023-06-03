@@ -51,7 +51,9 @@ const App = () => {
             <li onClick={() => scrollToSection(aboutRef)}>About</li>
             <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
             <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-            <li>Contact</li>
+            <li>
+              <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -280,9 +282,7 @@ const App = () => {
 
           <p>I’m always open to discuss new opportunities.</p>
 
-          <button>
-            <a href="mailto: ryan.henzell-hill@outlook.com">Get in touch</a>
-          </button>
+          <a href="mailto: ryan.henzell-hill@outlook.com">Get in touch</a>
         </section>
       </main>
 

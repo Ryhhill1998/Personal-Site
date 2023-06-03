@@ -259,12 +259,7 @@ section {
   margin: 0;
 }
 
-.cta button {
-  background: none;
-  border: none;
-}
-
-.cta button a {
+.cta a {
   padding: 0.5em 1em;
   color: var(--primary-theme);
   background-color: white;
@@ -278,7 +273,7 @@ section {
   margin-top: 1em;
 }
 
-.cta button:hover a {
+.cta a:hover {
   color: white;
   background-color: var(--primary-theme);
 }

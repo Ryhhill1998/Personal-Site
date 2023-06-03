@@ -20,21 +20,37 @@ import profileImgSrc from "./images/profile.jpg";
 import foodFiestaPreview from "./images/food-fiesta-preview.png";
 import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
+import { useRef } from "react";
 
 const App = () => {
+  const aboutRef = useRef();
+  const journeyRef = useRef();
+  const projectsRef = useRef();
+
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <header>
         <nav className="container">
-          <div className="logo">
+          <div className="logo" onClick={handleLogoClick}>
             <span className="number">25</span>
             <span className="letter">R</span>
           </div>
 
           <ul className="nav-links">
-            <li>About</li>
-            <li>Journey</li>
-            <li>Projects</li>
+            <li onClick={() => scrollToSection(aboutRef)}>About</li>
+            <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+            <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
             <li>Contact</li>
           </ul>
         </nav>
@@ -58,7 +74,12 @@ const App = () => {
           </div>
         </section>
 
-        <section id="about" className="about container">
+        <section className="about container">
+          <div
+            ref={aboutRef}
+            style={{ position: "absolute", top: "-82px" }}
+          ></div>
+
           <h2>About Me</h2>
 
           <p>
@@ -143,7 +164,12 @@ const App = () => {
           </div>
         </section>
 
-        <section id="journey" className="journey">
+        <section className="journey">
+          <div
+            ref={journeyRef}
+            style={{ position: "absolute", top: "-82px" }}
+          ></div>
+
           <div className="container">
             <h2>My Programming Journey</h2>
 
@@ -219,7 +245,12 @@ const App = () => {
           </div>
         </section>
 
-        <section id="projects" className="projects container">
+        <section className="projects container">
+          <div
+            ref={projectsRef}
+            style={{ position: "absolute", top: "-82px" }}
+          ></div>
+
           <h2>My Projects</h2>
 
           <p>
@@ -244,7 +275,7 @@ const App = () => {
           </div>
         </section>
 
-        <section id="cta" className="cta">
+        <section className="cta">
           <h2>Want to work with me?</h2>
 
           <p>I’m always open to discuss new opportunities.</p>

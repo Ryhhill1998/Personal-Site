@@ -231,11 +231,19 @@ const App = () => {
             <div className="preview">
               <img src={pawnsOnlyChessPreview} />
             </div>
-
-            <div className="preview"></div>
           </div>
         </section>
+
+        <section id="cta" className="cta">
+          <h2>Want to work with me?</h2>
+
+          <p>I’m always open to discuss new opportunities.</p>
+
+          <button>Get in touch</button>
+        </section>
       </main>
+
+      <footer></footer>
     </div>
   );
 };

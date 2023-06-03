@@ -102,8 +102,8 @@ const App = () => {
               <div>
                 <h3>Frontend Developer</h3>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  I have significant experience building frontend websites, web
+                  apps and games
                 </p>
               </div>
 
@@ -126,8 +126,8 @@ const App = () => {
               <div>
                 <h3>Backend Developer</h3>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  I have developed several full-stack web apps with user
+                  authentication and profiles
                 </p>
               </div>
 
@@ -137,8 +137,8 @@ const App = () => {
               </div>
 
               <div>
-                <h4>Frameworks</h4>
-                <p>Node Js</p>
+                <h4>Frameworks/Tools</h4>
+                <p>Node Js, Firebase</p>
               </div>
             </div>
 
@@ -150,8 +150,8 @@ const App = () => {
               <div>
                 <h3>iOS Developer</h3>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  I have recently begun learning Swift and am developing a
+                  password manager app for my masters project
                 </p>
               </div>
 

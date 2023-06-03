@@ -122,7 +122,7 @@ section {
   background-color: #f6f1f1;
   color: rgba(0, 0, 0, 0.7);
   flex-basis: 32%;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .about .cards-container .card .description {

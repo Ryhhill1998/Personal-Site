@@ -189,7 +189,7 @@ const App = () => {
                 <div className="content-container container-rhs">
                   <div>
                     <h3>Durham University</h3>
-                    <p>Chemistry BSc (Hons) Classification: 1st</p>
+                    <p>Chemistry BSc (Hons), Classification: 1st</p>
                     <p>Learned basic Excel skills</p>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ const App = () => {
                 <div className="content-container container-rhs">
                   <div>
                     <h3>Newcastle University</h3>
-                    <p>Computer Science MSc Classification: Distinction</p>
+                    <p>Computer Science MSc, Classification: Distinction</p>
                     <p>
                       Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
                       Computer Networks
@@ -258,10 +258,12 @@ const App = () => {
           <h2>My Projects</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I have built of number of projects in my spare time and at
+            university. Some of my favourites are shown below. The Food Fiesta
+            web app was developed in a team project which I led at university.
+            The website below I created for a Sports Massage business in my
+            local area. The Pawns Only Chess game was a personal project I
+            created to play with my friends and family.
           </p>
 
           <div className="previews-container">

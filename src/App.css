@@ -122,7 +122,6 @@ section {
   background-color: #f6f1f1;
   color: rgba(0, 0, 0, 0.7);
   flex-basis: 32%;
-  /* max-width: 300px; */
 }
 
 .about .cards-container .card .description {
@@ -156,6 +155,7 @@ section {
 
 .journey .timeline .row {
   display: flex;
+  justify-content: flex-start;
 }
 
 .journey .row > div {
@@ -166,7 +166,7 @@ section {
 }
 
 .journey .row .container-lhs {
-  justify-content: end;
+  justify-content: flex-end;
   border-right: solid 6px black;
   position: relative;
   padding-left: 0;
@@ -217,6 +217,10 @@ section {
   border-radius: 0.5em;
   text-align: left;
   padding: 1em;
+}
+
+.journey .row .content-container .hidden-date {
+  display: none;
 }
 
 .journey h3 {
@@ -423,5 +427,60 @@ h4 {
 @media (max-width: 500px) {
   .projects .previews-container .preview {
     flex-basis: 100%;
+  }
+
+  .journey .timeline .row.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .journey .row.reverse .container-rhs {
+    justify-content: flex-end;
+    border-right: solid 6px black;
+    position: relative;
+    padding: 2em;
+    padding-left: 0;
+  }
+
+  .journey .row.reverse .container-lhs {
+    position: relative;
+    justify-content: flex-start;
+    border-right: none;
+    padding: 2em;
+    padding-right: 0;
+  }
+
+  .journey .row .content-container {
+    margin-right: 2em;
+  }
+
+  .journey .row.reverse .container-rhs .timeline-indicator {
+    left: auto;
+    right: -18px;
+  }
+
+  .journey .row.reverse .container-lhs .timeline-indicator {
+    right: auto;
+    left: -18px;
+  }
+
+  .journey .row .date-container {
+    flex-basis: 0;
+  }
+
+  .journey .row .content-container {
+    flex-basis: 100%;
+  }
+
+  .journey .row .container-rhs .timeline-end {
+    left: auto;
+    right: -11px;
+  }
+
+  .journey .row .date-container span {
+    display: none;
+  }
+
+  .journey .row .content-container .hidden-date {
+    display: inline-block;
   }
 }

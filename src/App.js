@@ -190,16 +190,18 @@ const App = () => {
                 <div className="content-container container-rhs">
                   <div>
                     <h3>Durham University</h3>
+                    <p className="hidden-date">June 2021</p>
                     <p>Chemistry BSc (Hons), Classification: 1st</p>
                     <p>Learned basic Excel skills</p>
                   </div>
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row reverse">
                 <div className="content-container container-lhs">
                   <div>
                     <h3>Helena Biosciences</h3>
+                    <p className="hidden-date">July 2021</p>
                     <p>Technical Support Administrator</p>
                     <p>Learned VBA and Python to enhance productivity</p>
                   </div>
@@ -222,6 +224,7 @@ const App = () => {
                 <div className="content-container container-rhs">
                   <div>
                     <h3>Newcastle University</h3>
+                    <p className="hidden-date">September 2022</p>
                     <p>Computer Science MSc, Classification: Distinction</p>
                     <p>
                       Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
@@ -231,10 +234,11 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row reverse">
                 <div className="content-container container-lhs">
                   <div>
                     <h3>Lloyds Banking Group</h3>
+                    <p className="hidden-date">September 2023</p>
                     <p>Technology Engineering Graduate</p>
                   </div>
                 </div>

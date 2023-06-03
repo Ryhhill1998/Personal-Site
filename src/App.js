@@ -1,8 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faEnvelope,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 
-import { faApple } from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+
+import {
+  faApple,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./App.css";
 
@@ -243,7 +253,33 @@ const App = () => {
         </section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className="container">
+          <div className="logo">
+            <span className="number">25</span>
+            <span className="letter">R</span>
+          </div>
+
+          <div className="links-container">
+            <div className="link">
+              <FontAwesomeIcon className="icon" icon={faTwitter} />
+            </div>
+
+            <div className="link">
+              <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+            </div>
+
+            <div className="link">
+              <FontAwesomeIcon className="icon" icon={faEnvelope} />
+            </div>
+          </div>
+
+          <p className="copyright">
+            <FontAwesomeIcon className="icon" icon={faCopyright} />
+            Ryan Henzell-Hill
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

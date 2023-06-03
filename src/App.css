@@ -223,7 +223,6 @@ nav {
 
 .projects .previews-container .preview {
   flex-basis: 32%;
-  border: solid 1px lightgrey;
   border-radius: 0.5em;
   overflow: hidden;
 }
@@ -253,6 +252,53 @@ nav {
   font-weight: 600;
   margin-top: 0.5em;
   cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ebf3f7;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-top: 4em;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  color: var(--primary-theme);
+  border-color: var(--primary-theme);
+  background-color: white;
+}
+
+footer .links-container {
+  display: flex;
+  gap: 1em;
+}
+
+footer .links-container .link {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--primary-theme);
+  background-color: white;
+}
+
+footer .links-container .link .icon {
+  color: var(--primary-theme);
+}
+
+footer .copyright .icon {
+  margin-right: 0.5em;
 }
 
 /* HEADINGS */

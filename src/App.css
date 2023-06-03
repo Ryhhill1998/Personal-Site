@@ -50,7 +50,7 @@ header .logo:hover {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .nav-links li {
@@ -108,7 +108,7 @@ section {
 
 .about .cards-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -391,4 +391,15 @@ h4 {
   font-weight: 600;
   color: var(--primary-theme);
   margin-bottom: 0.5em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 750px) {
+  .about .cards-container {
+    flex-wrap: wrap;
+  }
+
+  .about .cards-container .card {
+    flex-basis: 48%;
+  }
 }

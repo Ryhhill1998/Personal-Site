@@ -11,6 +11,7 @@ import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 import {
   faApple,
+  faGithub,
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
@@ -348,6 +349,14 @@ const App = () => {
               className="link"
             >
               <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+            </a>
+
+            <a
+              href="https://github.com/Ryhhill1998"
+              target="_blank"
+              className="link"
+            >
+              <FontAwesomeIcon className="icon" icon={faGithub} />
             </a>
 
             <a href="mailto: ryan.henzell-hill@outlook.com" className="link">

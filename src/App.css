@@ -200,6 +200,34 @@ nav {
   color: var(--primary-theme);
 }
 
+.projects {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.projects h2 {
+  color: var(--primary-theme);
+}
+
+.projects > p {
+  width: 60%;
+  margin: 0 auto 5em;
+}
+
+.projects .previews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.projects .previews-container .preview {
+  flex-basis: 49%;
+  border: solid 1px lightgrey;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
 /* HEADINGS */
 h1 {
   font-size: 4rem;

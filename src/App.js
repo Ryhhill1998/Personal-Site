@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleXmark,
-  faCode,
-  faMagnifyingGlass,
-  faServer,
-} from "@fortawesome/free-solid-svg-icons";
+
+import { faCode, faServer } from "@fortawesome/free-solid-svg-icons";
+
+import { faApple } from "@fortawesome/free-brands-svg-icons";
 
 import "./App.css";
 
 import profileImgSrc from "./images/profile.jpg";
-import { faApple, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import foodFiestaPreview from "./images/food-fiesta-preview.png";
+import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
+import websitePreview from "./images/website-preview.png";
 
 const App = () => {
   return (
@@ -206,6 +206,33 @@ const App = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="projects" className="projects container">
+          <h2>My Projects</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <div className="previews-container">
+            <div className="preview">
+              <img src={foodFiestaPreview} />
+            </div>
+
+            <div className="preview">
+              <img src={websitePreview} />
+            </div>
+
+            <div className="preview">
+              <img src={pawnsOnlyChessPreview} />
+            </div>
+
+            <div className="preview"></div>
           </div>
         </section>
       </main>

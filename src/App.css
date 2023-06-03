@@ -23,6 +23,9 @@ nav {
   width: 50px;
   height: 50px;
   color: var(--secondary-theme);
+}
+
+header .logo {
   cursor: pointer;
 }
 
@@ -258,15 +261,20 @@ section {
 
 .cta button {
   padding: 0.5em 1em;
-  background-color: var(--primary-theme);
-  color: white;
-  border: none;
+  background-color: white;
+  color: var(--primary-theme);
+  border: solid 2px var(--primary-theme);
   border-radius: 0.5em;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0.5em;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.cta button:hover {
+  color: white;
+  background-color: var(--primary-theme);
 }
 
 /* FOOTER */
@@ -305,10 +313,19 @@ footer .links-container .link {
   align-items: center;
   border: solid 2px var(--primary-theme);
   background-color: white;
+  cursor: pointer;
 }
 
 footer .links-container .link .icon {
   color: var(--primary-theme);
+}
+
+footer .links-container .link:hover {
+  background-color: var(--primary-theme);
+}
+
+footer .links-container .link:hover .icon {
+  color: white;
 }
 
 footer .copyright .icon {

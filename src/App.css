@@ -102,7 +102,7 @@ section {
 
 .about > p {
   max-width: 600px;
-  margin: 0 auto 5em;
+  margin: 0 auto 3em;
   font-size: 1.1rem;
 }
 
@@ -235,7 +235,7 @@ section {
 
 .projects > p {
   max-width: 700px;
-  margin: 0 auto 5em;
+  margin: 0 auto 3em;
   font-size: 1.1rem;
 }
 

@@ -33,3 +33,7 @@ img {
 p {
   line-height: 1.75rem;
 }
+
+a {
+  text-decoration: none;
+}

@@ -280,7 +280,9 @@ const App = () => {
 
           <p>I’m always open to discuss new opportunities.</p>
 
-          <button>Get in touch</button>
+          <button>
+            <a href="mailto: ryan.henzell-hill@outlook.com">Get in touch</a>
+          </button>
         </section>
       </main>
 
@@ -292,17 +294,25 @@ const App = () => {
           </div>
 
           <div className="links-container">
-            <div className="link">
+            <a
+              href="https://twitter.com/ryanhenzellhill"
+              target="_blank"
+              className="link"
+            >
               <FontAwesomeIcon className="icon" icon={faTwitter} />
-            </div>
+            </a>
 
-            <div className="link">
+            <a
+              href="https://www.linkedin.com/in/ryanhenzell-hill"
+              target="_blank"
+              className="link"
+            >
               <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
-            </div>
+            </a>
 
-            <div className="link">
+            <a href="mailto: ryan.henzell-hill@outlook.com" className="link">
               <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            </div>
+            </a>
           </div>
 
           <p className="copyright">

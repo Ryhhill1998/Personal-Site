@@ -86,10 +86,11 @@ const App = () => {
           <h2>About Me</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I'm currently studying a masters in Computer Science and have almost
+            two years of coding experience. I love designing and developing
+            everything from websites to mobile games and am constantly on the
+            lookout for new challenges. I'm confident, curious and determined to
+            improve my skills everyday.
           </p>
 
           <div className="cards-container">

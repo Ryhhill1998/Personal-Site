@@ -33,6 +33,9 @@ const App = () => {
 
   const [dropdownIsVisible, setDropdownIsVisible] = useState(false);
   const [hamburgerIcon, setHamburgerIcon] = useState(faBars);
+  const [headerBackgroundColour, setHeaderBackgroundColour] = useState(
+    "rgba(0, 0, 0, 0.85)"
+  );
 
   const handleLogoClick = () => {
     window.scrollTo({
@@ -47,19 +50,25 @@ const App = () => {
     if (dropdownIsVisible) {
       setDropdownIsVisible(false);
       setHamburgerIcon(faBars);
+      setHeaderBackgroundColour("rgba(0, 0, 0, 0.85)");
     }
   };
 
   const handleHamburgerClick = () => {
-    setDropdownIsVisible((dropdownIsVisible) => !dropdownIsVisible);
-    setHamburgerIcon((hamburgerIcon) =>
-      hamburgerIcon === faBars ? faXmark : faBars
-    );
+    if (dropdownIsVisible) {
+      setDropdownIsVisible(false);
+      setHamburgerIcon(faBars);
+      setHeaderBackgroundColour("rgba(0, 0, 0, 0.85)");
+    } else {
+      setDropdownIsVisible(true);
+      setHamburgerIcon(faXmark);
+      setHeaderBackgroundColour("rgba(0, 0, 0)");
+    }
   };
 
   return (
     <div>
-      <header>
+      <header style={{ backgroundColor: headerBackgroundColour }}>
         <nav className="container">
           <div>
             <div className="logo" onClick={handleLogoClick}>

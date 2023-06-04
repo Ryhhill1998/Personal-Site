@@ -6,6 +6,7 @@ import {
   faCode,
   faEnvelope,
   faServer,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
@@ -23,12 +24,15 @@ import profileImgSrc from "./images/profile.jpg";
 import foodFiestaPreview from "./images/food-fiesta-preview.png";
 import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const App = () => {
   const aboutRef = useRef();
   const journeyRef = useRef();
   const projectsRef = useRef();
+
+  const [dropdownIsVisible, setDropdownIsVisible] = useState(false);
+  const [hamburgerIcon, setHamburgerIcon] = useState(faBars);
 
   const handleLogoClick = () => {
     window.scrollTo({
@@ -39,6 +43,13 @@ const App = () => {
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleHamburgerClick = () => {
+    setDropdownIsVisible((dropdownIsVisible) => !dropdownIsVisible);
+    setHamburgerIcon((hamburgerIcon) =>
+      hamburgerIcon === faBars ? faXmark : faBars
+    );
   };
 
   return (
@@ -60,19 +71,21 @@ const App = () => {
               </li>
             </ul>
 
-            <button>
-              <FontAwesomeIcon className="icon" icon={faBars} />
+            <button onClick={handleHamburgerClick}>
+              <FontAwesomeIcon className="icon" icon={hamburgerIcon} />
             </button>
           </div>
 
-          <ul className="nav-links collapse">
-            <li onClick={() => scrollToSection(aboutRef)}>About</li>
-            <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
-            <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-            <li>
-              <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
-            </li>
-          </ul>
+          {dropdownIsVisible && (
+            <ul className="nav-links collapse">
+              <li onClick={() => scrollToSection(aboutRef)}>About</li>
+              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+              <li>
+                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+              </li>
+            </ul>
+          )}
         </nav>
       </header>
 

@@ -20,7 +20,7 @@ import {
 
 import "./App.css";
 
-import profileImgSrc from "./images/profile.jpg";
+import profileImgSrc from "./images/profile-background.jpg";
 import foodFiestaPreview from "./images/food-fiesta-preview.png";
 import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";

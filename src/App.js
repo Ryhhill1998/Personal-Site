@@ -45,12 +45,27 @@ const App = () => {
     <div>
       <header>
         <nav className="container">
-          <div className="logo" onClick={handleLogoClick}>
-            <span className="number">25</span>
-            <span className="letter">R</span>
+          <div>
+            <div className="logo" onClick={handleLogoClick}>
+              <span className="number">25</span>
+              <span className="letter">R</span>
+            </div>
+
+            <ul className="nav-links">
+              <li onClick={() => scrollToSection(aboutRef)}>About</li>
+              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+              <li>
+                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+              </li>
+            </ul>
+
+            <button>
+              <FontAwesomeIcon className="icon" icon={faBars} />
+            </button>
           </div>
 
-          <ul className="nav-links">
+          <ul className="nav-links collapse">
             <li onClick={() => scrollToSection(aboutRef)}>About</li>
             <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
             <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
@@ -58,10 +73,6 @@ const App = () => {
               <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
             </li>
           </ul>
-
-          <button>
-            <FontAwesomeIcon className="icon" icon={faBars} />
-          </button>
         </nav>
       </header>
 

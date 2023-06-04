@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   faArrowUpRightFromSquare,
+  faBars,
   faCode,
   faEnvelope,
   faServer,
@@ -57,6 +58,10 @@ const App = () => {
               <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
             </li>
           </ul>
+
+          <button>
+            <FontAwesomeIcon className="icon" icon={faBars} />
+          </button>
         </nav>
       </header>
 
@@ -181,7 +186,7 @@ const App = () => {
             <div className="timeline">
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span>June 2021</span>
+                  <span>October 2018</span>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>

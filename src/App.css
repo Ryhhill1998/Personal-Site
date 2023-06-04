@@ -63,6 +63,21 @@ header .logo:hover {
   color: white;
 }
 
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .icon {
+  color: var(--secondary-theme);
+  font-size: 1.5rem;
+}
+
+nav button:hover .icon {
+  color: white;
+}
+
 /* MAIN */
 section {
   position: relative;

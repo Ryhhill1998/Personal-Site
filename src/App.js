@@ -43,6 +43,11 @@ const App = () => {
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+
+    if (dropdownIsVisible) {
+      setDropdownIsVisible(false);
+      setHamburgerIcon(faBars);
+    }
   };
 
   const handleHamburgerClick = () => {

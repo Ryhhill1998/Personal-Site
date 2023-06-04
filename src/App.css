@@ -67,6 +67,7 @@ nav button {
   background: none;
   border: none;
   cursor: pointer;
+  display: none;
 }
 
 nav .icon {
@@ -434,6 +435,14 @@ h4 {
 }
 
 @media (max-width: 600px) {
+  nav button {
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .about .cards-container .card {
     flex-basis: 100%;
   }

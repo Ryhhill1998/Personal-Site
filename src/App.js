@@ -41,9 +41,19 @@ const App = () => {
   const [headerBackgroundColour, setHeaderBackgroundColour] = useState(
     "rgba(0, 0, 0, 0.85)"
   );
+  const [animationDelays, setAnimationDelays] = useState([0, 400, 800]);
 
   useEffect(() => {
     setBackgroundImageOpacity(1);
+  }, []);
+
+  useEffect(() => {
+    const { innerWidth } = window;
+    if (innerWidth <= 800) {
+      setAnimationDelays([0, 400, 0]);
+    } else if (innerWidth <= 600) {
+      setAnimationDelays([0, 0, 0]);
+    }
   }, []);
 
   const handleLogoClick = () => {
@@ -181,7 +191,7 @@ const App = () => {
             <div
               className="card"
               data-aos="fade-up"
-              data-aos-delay="250"
+              data-aos-delay={animationDelays[1]}
               data-aos-duration="1000"
             >
               <div className="icon-container">
@@ -210,7 +220,7 @@ const App = () => {
             <div
               className="card"
               data-aos="fade-up"
-              data-aos-delay="500"
+              data-aos-delay={animationDelays[2]}
               data-aos-duration="1000"
             >
               <div className="icon-container">
@@ -380,7 +390,7 @@ const App = () => {
               target="_blank"
               className="preview"
               data-aos="fade-up"
-              data-aos-delay="250"
+              data-aos-delay={animationDelays[1]}
               data-aos-duration="1000"
             >
               <img src={websitePreview} />
@@ -399,7 +409,7 @@ const App = () => {
               target="_blank"
               className="preview"
               data-aos="fade-up"
-              data-aos-delay="500"
+              data-aos-delay={animationDelays[2]}
               data-aos-duration="1000"
             >
               <img src={pawnsOnlyChessPreview} />

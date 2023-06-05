@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-site/static/css/main.a62c5f00.css",
-    "main.js": "/personal-site/static/js/main.a3ff04d1.js",
-    "static/media/food-fiesta-preview.png": "/personal-site/static/media/food-fiesta-preview.fab4721342144b77c526.png",
-    "static/media/profile-background.jpg": "/personal-site/static/media/profile-background.852f8a34faabc1f27927.jpg",
-    "static/media/pawns-only-chess-preview.png": "/personal-site/static/media/pawns-only-chess-preview.3a2722b22c562137726d.png",
-    "static/media/website-preview.png": "/personal-site/static/media/website-preview.fbd141af468a7f37a8fd.png",
-    "index.html": "/personal-site/index.html",
-    "main.a62c5f00.css.map": "/personal-site/static/css/main.a62c5f00.css.map",
-    "main.a3ff04d1.js.map": "/personal-site/static/js/main.a3ff04d1.js.map"
+    "main.css": "/static/css/main.a62c5f00.css",
+    "main.js": "/static/js/main.36869b5d.js",
+    "static/media/food-fiesta-preview.png": "/static/media/food-fiesta-preview.fab4721342144b77c526.png",
+    "static/media/profile-background.jpg": "/static/media/profile-background.852f8a34faabc1f27927.jpg",
+    "static/media/pawns-only-chess-preview.png": "/static/media/pawns-only-chess-preview.3a2722b22c562137726d.png",
+    "static/media/website-preview.png": "/static/media/website-preview.fbd141af468a7f37a8fd.png",
+    "index.html": "/index.html",
+    "main.a62c5f00.css.map": "/static/css/main.a62c5f00.css.map",
+    "main.36869b5d.js.map": "/static/js/main.36869b5d.js.map"
   },
   "entrypoints": [
     "static/css/main.a62c5f00.css",
-    "static/js/main.a3ff04d1.js"
+    "static/js/main.36869b5d.js"
   ]
 }

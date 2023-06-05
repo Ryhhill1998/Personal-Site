@@ -108,7 +108,7 @@ section {
   gap: 0.5em;
   justify-content: center;
   align-items: center;
-  transition: all 2s ease;
+  transition: all 1.5s ease-in;
 }
 
 .intro .background-image p {

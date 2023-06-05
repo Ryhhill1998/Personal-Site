@@ -12,6 +12,13 @@
   font-weight: 500;
 }
 
+html,
+body {
+  /* width: 100vw; */
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   background-color: white;
 }

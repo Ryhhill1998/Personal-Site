@@ -24,18 +24,23 @@ import profileImgSrc from "./images/profile-background.jpg";
 import foodFiestaPreview from "./images/food-fiesta-preview.png";
 import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const App = () => {
   const aboutRef = useRef();
   const journeyRef = useRef();
   const projectsRef = useRef();
 
+  const [backgroundImageOpacity, setBackgroundImageOpacity] = useState(0);
   const [dropdownIsVisible, setDropdownIsVisible] = useState(false);
   const [hamburgerIcon, setHamburgerIcon] = useState(faBars);
   const [headerBackgroundColour, setHeaderBackgroundColour] = useState(
     "rgba(0, 0, 0, 0.85)"
   );
+
+  useEffect(() => {
+    setBackgroundImageOpacity(1);
+  }, []);
 
   const handleLogoClick = () => {
     window.scrollTo({
@@ -113,6 +118,7 @@ const App = () => {
               rgba(0, 0, 0, 0.55) ), 
               url(${profileImgSrc})
               `,
+              opacity: backgroundImageOpacity,
             }}
           >
             <h1>Ryan Henzell-Hill</h1>

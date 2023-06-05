@@ -26,6 +26,10 @@ import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
 import { useEffect, useRef, useState } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const App = () => {
   const aboutRef = useRef();
   const journeyRef = useRef();
@@ -133,9 +137,15 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2>About Me</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            About Me
+          </h2>
 
-          <p>
+          <p
+            className="section-intro"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             I'm currently studying a masters in Computer Science and have almost
             two years of coding experience. I love designing and developing
             everything from websites to mobile games and am constantly on the
@@ -144,7 +154,7 @@ const App = () => {
           </p>
 
           <div className="cards-container">
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-duration="1000">
               <div className="icon-container">
                 <FontAwesomeIcon className="icon" icon={faCode} />
               </div>
@@ -168,7 +178,12 @@ const App = () => {
               </div>
             </div>
 
-            <div className="card">
+            <div
+              className="card"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1000"
+            >
               <div className="icon-container">
                 <FontAwesomeIcon className="icon" icon={faServer} />
               </div>
@@ -192,7 +207,12 @@ const App = () => {
               </div>
             </div>
 
-            <div className="card">
+            <div
+              className="card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <div className="icon-container">
                 <FontAwesomeIcon className="icon" icon={faApple} />
               </div>
@@ -225,19 +245,23 @@ const App = () => {
           ></div>
 
           <div className="container">
-            <h2>My Programming Journey</h2>
+            <h2 data-aos="fade-in" data-aos-duration="1000">
+              My Programming Journey
+            </h2>
 
             <div className="timeline">
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span>October 2018</span>
+                  <span data-aos="fade-right" data-aos-duration="1000">
+                    October 2018
+                  </span>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div>
+                  <div data-aos="fade-left" data-aos-duration="1000">
                     <h3>Durham University</h3>
                     <p className="hidden-date">June 2021</p>
                     <p>Chemistry BSc (Hons), Classification: 1st</p>
@@ -248,7 +272,7 @@ const App = () => {
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div>
+                  <div data-aos="fade-right" data-aos-duration="1000">
                     <h3>Helena Biosciences</h3>
                     <p className="hidden-date">July 2021</p>
                     <p>Technical Support Administrator</p>
@@ -257,7 +281,9 @@ const App = () => {
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span>July 2021</span>
+                  <span data-aos="fade-left" data-aos-duration="1000">
+                    July 2021
+                  </span>
 
                   <div className="timeline-indicator"></div>
                 </div>
@@ -265,13 +291,15 @@ const App = () => {
 
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span>September 2022</span>
+                  <span data-aos="fade-right" data-aos-duration="1000">
+                    September 2022
+                  </span>
 
                   <div className="timeline-indicator"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div>
+                  <div data-aos="fade-left" data-aos-duration="1000">
                     <h3>Newcastle University</h3>
                     <p className="hidden-date">September 2022</p>
                     <p>Computer Science MSc, Classification: Distinction</p>
@@ -285,7 +313,7 @@ const App = () => {
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div>
+                  <div data-aos="fade-right" data-aos-duration="1000">
                     <h3>Lloyds Banking Group</h3>
                     <p className="hidden-date">September 2023</p>
                     <p>Technology Engineering Graduate</p>
@@ -293,7 +321,9 @@ const App = () => {
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span>September 2023</span>
+                  <span data-aos="fade-left" data-aos-duration="1000">
+                    September 2023
+                  </span>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
@@ -309,9 +339,15 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2>My Projects</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            My Projects
+          </h2>
 
-          <p>
+          <p
+            className="section-intro"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             I have built of number of projects in my spare time and at
             university. Some of my favourites are shown below. The Food Fiesta
             web app was developed in a team project which I led at university.
@@ -325,6 +361,8 @@ const App = () => {
               href="https://food-fiesta-web-app.netlify.app"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <img src={foodFiestaPreview} />
 
@@ -341,6 +379,9 @@ const App = () => {
               href="https://rrsportsmassage.netlify.app/"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1000"
             >
               <img src={websitePreview} />
 
@@ -357,6 +398,9 @@ const App = () => {
               href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             >
               <img src={pawnsOnlyChessPreview} />
 
@@ -372,11 +416,21 @@ const App = () => {
         </section>
 
         <section className="cta">
-          <h2>Want to work with me?</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">
+            Want to work with me?
+          </h2>
 
-          <p>I’m always open to discuss new opportunities.</p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            I’m always open to discuss new opportunities.
+          </p>
 
-          <a href="mailto: ryan.henzell-hill@outlook.com">Get in touch</a>
+          <a
+            href="mailto: ryan.henzell-hill@outlook.com"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Get in touch
+          </a>
         </section>
       </main>
 

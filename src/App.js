@@ -26,7 +26,9 @@ import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
 import { useEffect, useRef, useState } from "react";
 
-import { Fade, Slide } from "react-awesome-reveal";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const App = () => {
   const aboutRef = useRef();
@@ -76,40 +78,38 @@ const App = () => {
   return (
     <div>
       <header style={{ backgroundColor: headerBackgroundColour }}>
-        <Fade>
-          <nav className="container">
-            <div>
-              <div className="logo" onClick={handleLogoClick}>
-                <span className="number">25</span>
-                <span className="letter">R</span>
-              </div>
-
-              <ul className="nav-links">
-                <li onClick={() => scrollToSection(aboutRef)}>About</li>
-                <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
-                <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-                <li>
-                  <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
-                </li>
-              </ul>
-
-              <button onClick={handleHamburgerClick}>
-                <FontAwesomeIcon className="icon" icon={hamburgerIcon} />
-              </button>
+        <nav className="container">
+          <div>
+            <div className="logo" onClick={handleLogoClick}>
+              <span className="number">25</span>
+              <span className="letter">R</span>
             </div>
 
-            {dropdownIsVisible && (
-              <ul className="nav-links collapse">
-                <li onClick={() => scrollToSection(aboutRef)}>About</li>
-                <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
-                <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-                <li>
-                  <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
-                </li>
-              </ul>
-            )}
-          </nav>
-        </Fade>
+            <ul className="nav-links">
+              <li onClick={() => scrollToSection(aboutRef)}>About</li>
+              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+              <li>
+                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+              </li>
+            </ul>
+
+            <button onClick={handleHamburgerClick}>
+              <FontAwesomeIcon className="icon" icon={hamburgerIcon} />
+            </button>
+          </div>
+
+          {dropdownIsVisible && (
+            <ul className="nav-links collapse">
+              <li onClick={() => scrollToSection(aboutRef)}>About</li>
+              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+              <li>
+                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+              </li>
+            </ul>
+          )}
+        </nav>
       </header>
 
       <main>
@@ -137,98 +137,98 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <Slide triggerOnce={true}>
-            <h2>About Me</h2>
-          </Slide>
+          <h2>About Me</h2>
 
-          <Slide direction="right" triggerOnce={true}>
-            <p className="section-intro">
-              I'm currently studying a masters in Computer Science and have
-              almost two years of coding experience. I love designing and
-              developing everything from websites to mobile games and am
-              constantly on the lookout for new challenges. I'm confident,
-              curious and determined to improve my skills everyday.
-            </p>
-          </Slide>
+          <p className="section-intro">
+            I'm currently studying a masters in Computer Science and have almost
+            two years of coding experience. I love designing and developing
+            everything from websites to mobile games and am constantly on the
+            lookout for new challenges. I'm confident, curious and determined to
+            improve my skills everyday.
+          </p>
 
           <div className="cards-container">
-            <Slide direction="up" triggerOnce={true}>
-              <div className="card">
-                <div className="icon-container">
-                  <FontAwesomeIcon className="icon" icon={faCode} />
-                </div>
-
-                <div>
-                  <h3>Frontend Developer</h3>
-                  <p className="description">
-                    I have significant experience building frontend websites,
-                    web apps and games
-                  </p>
-                </div>
-
-                <div>
-                  <h4>Languages</h4>
-                  <p>JavaScript, HTML, CSS, SASS</p>
-                </div>
-
-                <div>
-                  <h4>Frameworks</h4>
-                  <p>React Js, jQuery</p>
-                </div>
+            <div className="card" data-aos="fade-up" data-aos-duration="1000">
+              <div className="icon-container">
+                <FontAwesomeIcon className="icon" icon={faCode} />
               </div>
-            </Slide>
 
-            <Slide direction="up" delay={250} triggerOnce={true}>
-              <div className="card">
-                <div className="icon-container">
-                  <FontAwesomeIcon className="icon" icon={faServer} />
-                </div>
-
-                <div>
-                  <h3>Backend Developer</h3>
-                  <p className="description">
-                    I have developed several full-stack web apps with user
-                    authentication and profiles
-                  </p>
-                </div>
-
-                <div>
-                  <h4>Languages</h4>
-                  <p>JavaScript</p>
-                </div>
-
-                <div>
-                  <h4>Frameworks/Tools</h4>
-                  <p>Node Js, Firebase</p>
-                </div>
+              <div>
+                <h3>Frontend Developer</h3>
+                <p className="description">
+                  I have significant experience building frontend websites, web
+                  apps and games
+                </p>
               </div>
-            </Slide>
 
-            <Slide direction="up" delay={500} triggerOnce={true}>
-              <div className="card">
-                <div className="icon-container">
-                  <FontAwesomeIcon className="icon" icon={faApple} />
-                </div>
-
-                <div>
-                  <h3>iOS Developer</h3>
-                  <p className="description">
-                    I have recently begun learning Swift and am developing a
-                    password manager app for my masters project
-                  </p>
-                </div>
-
-                <div>
-                  <h4>Languages</h4>
-                  <p>Swift</p>
-                </div>
-
-                <div>
-                  <h4>Frameworks</h4>
-                  <p>UIKit, SwiftUI</p>
-                </div>
+              <div>
+                <h4>Languages</h4>
+                <p>JavaScript, HTML, CSS, SASS</p>
               </div>
-            </Slide>
+
+              <div>
+                <h4>Frameworks</h4>
+                <p>React Js, jQuery</p>
+              </div>
+            </div>
+
+            <div
+              className="card"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1000"
+            >
+              <div className="icon-container">
+                <FontAwesomeIcon className="icon" icon={faServer} />
+              </div>
+
+              <div>
+                <h3>Backend Developer</h3>
+                <p className="description">
+                  I have developed several full-stack web apps with user
+                  authentication and profiles
+                </p>
+              </div>
+
+              <div>
+                <h4>Languages</h4>
+                <p>JavaScript</p>
+              </div>
+
+              <div>
+                <h4>Frameworks/Tools</h4>
+                <p>Node Js, Firebase</p>
+              </div>
+            </div>
+
+            <div
+              className="card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <div className="icon-container">
+                <FontAwesomeIcon className="icon" icon={faApple} />
+              </div>
+
+              <div>
+                <h3>iOS Developer</h3>
+                <p className="description">
+                  I have recently begun learning Swift and am developing a
+                  password manager app for my masters project
+                </p>
+              </div>
+
+              <div>
+                <h4>Languages</h4>
+                <p>Swift</p>
+              </div>
+
+              <div>
+                <h4>Frameworks</h4>
+                <p>UIKit, SwiftUI</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -239,49 +239,39 @@ const App = () => {
           ></div>
 
           <div className="container">
-            <Fade triggerOnce={true}>
-              <h2>My Programming Journey</h2>
-            </Fade>
+            <h2>My Programming Journey</h2>
 
             <div className="timeline">
               <div className="row">
                 <div className="date-container container-lhs">
-                  <Slide triggerOnce={true}>
-                    <span>October 2018</span>
-                  </Slide>
+                  <span>October 2018</span>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <Slide direction="right" triggerOnce={true}>
-                    <div>
-                      <h3>Durham University</h3>
-                      <p className="hidden-date">June 2021</p>
-                      <p>Chemistry BSc (Hons), Classification: 1st</p>
-                      <p>Learned basic Excel skills</p>
-                    </div>
-                  </Slide>
+                  <div>
+                    <h3>Durham University</h3>
+                    <p className="hidden-date">June 2021</p>
+                    <p>Chemistry BSc (Hons), Classification: 1st</p>
+                    <p>Learned basic Excel skills</p>
+                  </div>
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <Slide triggerOnce={true}>
-                    <div>
-                      <h3>Helena Biosciences</h3>
-                      <p className="hidden-date">July 2021</p>
-                      <p>Technical Support Administrator</p>
-                      <p>Learned VBA and Python to enhance productivity</p>
-                    </div>
-                  </Slide>
+                  <div>
+                    <h3>Helena Biosciences</h3>
+                    <p className="hidden-date">July 2021</p>
+                    <p>Technical Support Administrator</p>
+                    <p>Learned VBA and Python to enhance productivity</p>
+                  </div>
                 </div>
 
                 <div className="date-container container-rhs">
-                  <Slide direction="right" triggerOnce={true}>
-                    <span>July 2021</span>
-                  </Slide>
+                  <span>July 2021</span>
 
                   <div className="timeline-indicator"></div>
                 </div>
@@ -289,43 +279,35 @@ const App = () => {
 
               <div className="row">
                 <div className="date-container container-lhs">
-                  <Slide triggerOnce={true}>
-                    <span>September 2022</span>
-                  </Slide>
+                  <span>September 2022</span>
 
                   <div className="timeline-indicator"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <Slide direction="right" triggerOnce={true}>
-                    <div>
-                      <h3>Newcastle University</h3>
-                      <p className="hidden-date">September 2022</p>
-                      <p>Computer Science MSc, Classification: Distinction</p>
-                      <p>
-                        Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
-                        Computer Networks
-                      </p>
-                    </div>
-                  </Slide>
+                  <div>
+                    <h3>Newcastle University</h3>
+                    <p className="hidden-date">September 2022</p>
+                    <p>Computer Science MSc, Classification: Distinction</p>
+                    <p>
+                      Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
+                      Computer Networks
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <Slide triggerOnce={true}>
-                    <div>
-                      <h3>Lloyds Banking Group</h3>
-                      <p className="hidden-date">September 2023</p>
-                      <p>Technology Engineering Graduate</p>
-                    </div>
-                  </Slide>
+                  <div>
+                    <h3>Lloyds Banking Group</h3>
+                    <p className="hidden-date">September 2023</p>
+                    <p>Technology Engineering Graduate</p>
+                  </div>
                 </div>
 
                 <div className="date-container container-rhs">
-                  <Slide direction="right" triggerOnce={true}>
-                    <span>September 2023</span>
-                  </Slide>
+                  <span>September 2023</span>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
@@ -341,75 +323,65 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <Slide triggerOnce={true}>
-            <h2>My Projects</h2>
-          </Slide>
+          <h2>My Projects</h2>
 
-          <Slide direction="right" triggerOnce={true}>
-            <p className="section-intro">
-              I have built of number of projects in my spare time and at
-              university. Some of my favourites are shown below. The Food Fiesta
-              web app was developed in a team project which I led at university.
-              The website below I created for a Sports Massage business in my
-              local area. The Pawns Only Chess game was a personal project I
-              created to play with my friends and family.
-            </p>
-          </Slide>
+          <p className="section-intro">
+            I have built of number of projects in my spare time and at
+            university. Some of my favourites are shown below. The Food Fiesta
+            web app was developed in a team project which I led at university.
+            The website below I created for a Sports Massage business in my
+            local area. The Pawns Only Chess game was a personal project I
+            created to play with my friends and family.
+          </p>
 
           <div className="previews-container">
-            <Slide direction="up" triggerOnce={true}>
-              <a
-                href="https://food-fiesta-web-app.netlify.app"
-                target="_blank"
-                className="preview"
-              >
-                <img src={foodFiestaPreview} />
+            <a
+              href="https://food-fiesta-web-app.netlify.app"
+              target="_blank"
+              className="preview"
+            >
+              <img src={foodFiestaPreview} />
 
-                <span>
-                  <FontAwesomeIcon
-                    className="icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                  Food Fiesta Web App
-                </span>
-              </a>
-            </Slide>
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Food Fiesta Web App
+              </span>
+            </a>
 
-            <Slide direction="up" delay={250} triggerOnce={true}>
-              <a
-                href="https://rrsportsmassage.netlify.app/"
-                target="_blank"
-                className="preview"
-              >
-                <img src={websitePreview} />
+            <a
+              href="https://rrsportsmassage.netlify.app/"
+              target="_blank"
+              className="preview"
+            >
+              <img src={websitePreview} />
 
-                <span>
-                  <FontAwesomeIcon
-                    className="icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                  Sports Massage Website
-                </span>
-              </a>
-            </Slide>
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Sports Massage Website
+              </span>
+            </a>
 
-            <Slide direction="up" delay={500} triggerOnce={true}>
-              <a
-                href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
-                target="_blank"
-                className="preview"
-              >
-                <img src={pawnsOnlyChessPreview} />
+            <a
+              href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
+              target="_blank"
+              className="preview"
+            >
+              <img src={pawnsOnlyChessPreview} />
 
-                <span>
-                  <FontAwesomeIcon
-                    className="icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                  Pawns Only Chess Game
-                </span>
-              </a>
-            </Slide>
+              <span>
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faArrowUpRightFromSquare}
+                />
+                Pawns Only Chess Game
+              </span>
+            </a>
           </div>
         </section>
 

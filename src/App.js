@@ -416,11 +416,21 @@ const App = () => {
         </section>
 
         <section className="cta">
-          <h2>Want to work with me?</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">
+            Want to work with me?
+          </h2>
 
-          <p>I’m always open to discuss new opportunities.</p>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            I’m always open to discuss new opportunities.
+          </p>
 
-          <a href="mailto: ryan.henzell-hill@outlook.com">Get in touch</a>
+          <a
+            href="mailto: ryan.henzell-hill@outlook.com"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Get in touch
+          </a>
         </section>
       </main>
 

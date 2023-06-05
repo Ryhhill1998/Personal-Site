@@ -26,6 +26,8 @@ import pawnsOnlyChessPreview from "./images/pawns-only-chess-preview.png";
 import websitePreview from "./images/website-preview.png";
 import { useEffect, useRef, useState } from "react";
 
+import { Fade, Slide } from "react-awesome-reveal";
+
 const App = () => {
   const aboutRef = useRef();
   const journeyRef = useRef();
@@ -74,38 +76,40 @@ const App = () => {
   return (
     <div>
       <header style={{ backgroundColor: headerBackgroundColour }}>
-        <nav className="container">
-          <div>
-            <div className="logo" onClick={handleLogoClick}>
-              <span className="number">25</span>
-              <span className="letter">R</span>
+        <Fade>
+          <nav className="container">
+            <div>
+              <div className="logo" onClick={handleLogoClick}>
+                <span className="number">25</span>
+                <span className="letter">R</span>
+              </div>
+
+              <ul className="nav-links">
+                <li onClick={() => scrollToSection(aboutRef)}>About</li>
+                <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+                <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+                <li>
+                  <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+                </li>
+              </ul>
+
+              <button onClick={handleHamburgerClick}>
+                <FontAwesomeIcon className="icon" icon={hamburgerIcon} />
+              </button>
             </div>
 
-            <ul className="nav-links">
-              <li onClick={() => scrollToSection(aboutRef)}>About</li>
-              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
-              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-              <li>
-                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
-              </li>
-            </ul>
-
-            <button onClick={handleHamburgerClick}>
-              <FontAwesomeIcon className="icon" icon={hamburgerIcon} />
-            </button>
-          </div>
-
-          {dropdownIsVisible && (
-            <ul className="nav-links collapse">
-              <li onClick={() => scrollToSection(aboutRef)}>About</li>
-              <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
-              <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
-              <li>
-                <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
-              </li>
-            </ul>
-          )}
-        </nav>
+            {dropdownIsVisible && (
+              <ul className="nav-links collapse">
+                <li onClick={() => scrollToSection(aboutRef)}>About</li>
+                <li onClick={() => scrollToSection(journeyRef)}>Journey</li>
+                <li onClick={() => scrollToSection(projectsRef)}>Projects</li>
+                <li>
+                  <a href="mailto: ryan.henzell-hill@outlook.com">Contact</a>
+                </li>
+              </ul>
+            )}
+          </nav>
+        </Fade>
       </header>
 
       <main>
@@ -133,88 +137,98 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2>About Me</h2>
+          <Fade triggerOnce={true}>
+            <h2>About Me</h2>
+          </Fade>
 
-          <p>
-            I'm currently studying a masters in Computer Science and have almost
-            two years of coding experience. I love designing and developing
-            everything from websites to mobile games and am constantly on the
-            lookout for new challenges. I'm confident, curious and determined to
-            improve my skills everyday.
-          </p>
+          <Fade triggerOnce={true}>
+            <p className="section-intro">
+              I'm currently studying a masters in Computer Science and have
+              almost two years of coding experience. I love designing and
+              developing everything from websites to mobile games and am
+              constantly on the lookout for new challenges. I'm confident,
+              curious and determined to improve my skills everyday.
+            </p>
+          </Fade>
 
           <div className="cards-container">
-            <div className="card">
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faCode} />
-              </div>
+            <Slide direction="up" triggerOnce={true}>
+              <div className="card">
+                <div className="icon-container">
+                  <FontAwesomeIcon className="icon" icon={faCode} />
+                </div>
 
-              <div>
-                <h3>Frontend Developer</h3>
-                <p className="description">
-                  I have significant experience building frontend websites, web
-                  apps and games
-                </p>
-              </div>
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p className="description">
+                    I have significant experience building frontend websites,
+                    web apps and games
+                  </p>
+                </div>
 
-              <div>
-                <h4>Languages</h4>
-                <p>JavaScript, HTML, CSS, SASS</p>
-              </div>
+                <div>
+                  <h4>Languages</h4>
+                  <p>JavaScript, HTML, CSS, SASS</p>
+                </div>
 
-              <div>
-                <h4>Frameworks</h4>
-                <p>React Js, jQuery</p>
+                <div>
+                  <h4>Frameworks</h4>
+                  <p>React Js, jQuery</p>
+                </div>
               </div>
-            </div>
+            </Slide>
 
-            <div className="card">
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faServer} />
-              </div>
+            <Slide direction="up" delay={250} triggerOnce={true}>
+              <div className="card">
+                <div className="icon-container">
+                  <FontAwesomeIcon className="icon" icon={faServer} />
+                </div>
 
-              <div>
-                <h3>Backend Developer</h3>
-                <p className="description">
-                  I have developed several full-stack web apps with user
-                  authentication and profiles
-                </p>
-              </div>
+                <div>
+                  <h3>Backend Developer</h3>
+                  <p className="description">
+                    I have developed several full-stack web apps with user
+                    authentication and profiles
+                  </p>
+                </div>
 
-              <div>
-                <h4>Languages</h4>
-                <p>JavaScript</p>
-              </div>
+                <div>
+                  <h4>Languages</h4>
+                  <p>JavaScript</p>
+                </div>
 
-              <div>
-                <h4>Frameworks/Tools</h4>
-                <p>Node Js, Firebase</p>
+                <div>
+                  <h4>Frameworks/Tools</h4>
+                  <p>Node Js, Firebase</p>
+                </div>
               </div>
-            </div>
+            </Slide>
 
-            <div className="card">
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faApple} />
-              </div>
+            <Slide direction="up" delay={500} triggerOnce={true}>
+              <div className="card">
+                <div className="icon-container">
+                  <FontAwesomeIcon className="icon" icon={faApple} />
+                </div>
 
-              <div>
-                <h3>iOS Developer</h3>
-                <p className="description">
-                  I have recently begun learning Swift and am developing a
-                  password manager app for my masters project
-                </p>
-              </div>
+                <div>
+                  <h3>iOS Developer</h3>
+                  <p className="description">
+                    I have recently begun learning Swift and am developing a
+                    password manager app for my masters project
+                  </p>
+                </div>
 
-              <div>
-                <h4>Languages</h4>
-                <p>Swift</p>
-              </div>
+                <div>
+                  <h4>Languages</h4>
+                  <p>Swift</p>
+                </div>
 
-              <div>
-                <h4>Frameworks</h4>
-                <p>UIKit, SwiftUI</p>
+                <div>
+                  <h4>Frameworks</h4>
+                  <p>UIKit, SwiftUI</p>
+                </div>
               </div>
-            </div>
+            </Slide>
           </div>
         </section>
 
@@ -311,7 +325,7 @@ const App = () => {
 
           <h2>My Projects</h2>
 
-          <p>
+          <p className="section-intro">
             I have built of number of projects in my spare time and at
             university. Some of my favourites are shown below. The Food Fiesta
             web app was developed in a team project which I led at university.

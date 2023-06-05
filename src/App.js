@@ -137,11 +137,11 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <Fade triggerOnce={true}>
+          <Slide triggerOnce={true}>
             <h2>About Me</h2>
-          </Fade>
+          </Slide>
 
-          <Fade triggerOnce={true}>
+          <Slide direction="right" triggerOnce={true}>
             <p className="section-intro">
               I'm currently studying a masters in Computer Science and have
               almost two years of coding experience. I love designing and
@@ -149,7 +149,7 @@ const App = () => {
               constantly on the lookout for new challenges. I'm confident,
               curious and determined to improve my skills everyday.
             </p>
-          </Fade>
+          </Slide>
 
           <div className="cards-container">
             <Slide direction="up" triggerOnce={true}>
@@ -239,39 +239,49 @@ const App = () => {
           ></div>
 
           <div className="container">
-            <h2>My Programming Journey</h2>
+            <Fade triggerOnce={true}>
+              <h2>My Programming Journey</h2>
+            </Fade>
 
             <div className="timeline">
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span>October 2018</span>
+                  <Slide triggerOnce={true}>
+                    <span>October 2018</span>
+                  </Slide>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div>
-                    <h3>Durham University</h3>
-                    <p className="hidden-date">June 2021</p>
-                    <p>Chemistry BSc (Hons), Classification: 1st</p>
-                    <p>Learned basic Excel skills</p>
-                  </div>
+                  <Slide direction="right" triggerOnce={true}>
+                    <div>
+                      <h3>Durham University</h3>
+                      <p className="hidden-date">June 2021</p>
+                      <p>Chemistry BSc (Hons), Classification: 1st</p>
+                      <p>Learned basic Excel skills</p>
+                    </div>
+                  </Slide>
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div>
-                    <h3>Helena Biosciences</h3>
-                    <p className="hidden-date">July 2021</p>
-                    <p>Technical Support Administrator</p>
-                    <p>Learned VBA and Python to enhance productivity</p>
-                  </div>
+                  <Slide triggerOnce={true}>
+                    <div>
+                      <h3>Helena Biosciences</h3>
+                      <p className="hidden-date">July 2021</p>
+                      <p>Technical Support Administrator</p>
+                      <p>Learned VBA and Python to enhance productivity</p>
+                    </div>
+                  </Slide>
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span>July 2021</span>
+                  <Slide direction="right" triggerOnce={true}>
+                    <span>July 2021</span>
+                  </Slide>
 
                   <div className="timeline-indicator"></div>
                 </div>
@@ -279,35 +289,43 @@ const App = () => {
 
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span>September 2022</span>
+                  <Slide triggerOnce={true}>
+                    <span>September 2022</span>
+                  </Slide>
 
                   <div className="timeline-indicator"></div>
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div>
-                    <h3>Newcastle University</h3>
-                    <p className="hidden-date">September 2022</p>
-                    <p>Computer Science MSc, Classification: Distinction</p>
-                    <p>
-                      Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
-                      Computer Networks
-                    </p>
-                  </div>
+                  <Slide direction="right" triggerOnce={true}>
+                    <div>
+                      <h3>Newcastle University</h3>
+                      <p className="hidden-date">September 2022</p>
+                      <p>Computer Science MSc, Classification: Distinction</p>
+                      <p>
+                        Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
+                        Computer Networks
+                      </p>
+                    </div>
+                  </Slide>
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div>
-                    <h3>Lloyds Banking Group</h3>
-                    <p className="hidden-date">September 2023</p>
-                    <p>Technology Engineering Graduate</p>
-                  </div>
+                  <Slide triggerOnce={true}>
+                    <div>
+                      <h3>Lloyds Banking Group</h3>
+                      <p className="hidden-date">September 2023</p>
+                      <p>Technology Engineering Graduate</p>
+                    </div>
+                  </Slide>
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span>September 2023</span>
+                  <Slide direction="right" triggerOnce={true}>
+                    <span>September 2023</span>
+                  </Slide>
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
@@ -323,65 +341,75 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2>My Projects</h2>
+          <Slide triggerOnce={true}>
+            <h2>My Projects</h2>
+          </Slide>
 
-          <p className="section-intro">
-            I have built of number of projects in my spare time and at
-            university. Some of my favourites are shown below. The Food Fiesta
-            web app was developed in a team project which I led at university.
-            The website below I created for a Sports Massage business in my
-            local area. The Pawns Only Chess game was a personal project I
-            created to play with my friends and family.
-          </p>
+          <Slide direction="right" triggerOnce={true}>
+            <p className="section-intro">
+              I have built of number of projects in my spare time and at
+              university. Some of my favourites are shown below. The Food Fiesta
+              web app was developed in a team project which I led at university.
+              The website below I created for a Sports Massage business in my
+              local area. The Pawns Only Chess game was a personal project I
+              created to play with my friends and family.
+            </p>
+          </Slide>
 
           <div className="previews-container">
-            <a
-              href="https://food-fiesta-web-app.netlify.app"
-              target="_blank"
-              className="preview"
-            >
-              <img src={foodFiestaPreview} />
+            <Slide direction="up" triggerOnce={true}>
+              <a
+                href="https://food-fiesta-web-app.netlify.app"
+                target="_blank"
+                className="preview"
+              >
+                <img src={foodFiestaPreview} />
 
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Food Fiesta Web App
-              </span>
-            </a>
+                <span>
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={faArrowUpRightFromSquare}
+                  />
+                  Food Fiesta Web App
+                </span>
+              </a>
+            </Slide>
 
-            <a
-              href="https://rrsportsmassage.netlify.app/"
-              target="_blank"
-              className="preview"
-            >
-              <img src={websitePreview} />
+            <Slide direction="up" delay={250} triggerOnce={true}>
+              <a
+                href="https://rrsportsmassage.netlify.app/"
+                target="_blank"
+                className="preview"
+              >
+                <img src={websitePreview} />
 
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Sports Massage Website
-              </span>
-            </a>
+                <span>
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={faArrowUpRightFromSquare}
+                  />
+                  Sports Massage Website
+                </span>
+              </a>
+            </Slide>
 
-            <a
-              href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
-              target="_blank"
-              className="preview"
-            >
-              <img src={pawnsOnlyChessPreview} />
+            <Slide direction="up" delay={500} triggerOnce={true}>
+              <a
+                href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
+                target="_blank"
+                className="preview"
+              >
+                <img src={pawnsOnlyChessPreview} />
 
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Pawns Only Chess Game
-              </span>
-            </a>
+                <span>
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={faArrowUpRightFromSquare}
+                  />
+                  Pawns Only Chess Game
+                </span>
+              </a>
+            </Slide>
           </div>
         </section>
 

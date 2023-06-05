@@ -49,6 +49,7 @@ const App = () => {
 
   useEffect(() => {
     const { innerWidth } = window;
+
     if (innerWidth <= 800) {
       setAnimationDelays([0, 400, 0]);
     } else if (innerWidth <= 600) {

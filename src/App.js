@@ -339,9 +339,15 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2>My Projects</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            My Projects
+          </h2>
 
-          <p className="section-intro">
+          <p
+            className="section-intro"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             I have built of number of projects in my spare time and at
             university. Some of my favourites are shown below. The Food Fiesta
             web app was developed in a team project which I led at university.
@@ -355,6 +361,8 @@ const App = () => {
               href="https://food-fiesta-web-app.netlify.app"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <img src={foodFiestaPreview} />
 
@@ -371,6 +379,9 @@ const App = () => {
               href="https://rrsportsmassage.netlify.app/"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1000"
             >
               <img src={websitePreview} />
 
@@ -387,6 +398,9 @@ const App = () => {
               href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
               target="_blank"
               className="preview"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             >
               <img src={pawnsOnlyChessPreview} />
 

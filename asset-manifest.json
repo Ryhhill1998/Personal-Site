@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a62c5f00.css",
-    "main.js": "/static/js/main.36869b5d.js",
+    "main.css": "/static/css/main.63916070.css",
+    "main.js": "/static/js/main.bdcd6c95.js",
     "static/media/food-fiesta-preview.png": "/static/media/food-fiesta-preview.fab4721342144b77c526.png",
     "static/media/profile-background.jpg": "/static/media/profile-background.852f8a34faabc1f27927.jpg",
     "static/media/pawns-only-chess-preview.png": "/static/media/pawns-only-chess-preview.3a2722b22c562137726d.png",
     "static/media/website-preview.png": "/static/media/website-preview.fbd141af468a7f37a8fd.png",
     "index.html": "/index.html",
-    "main.a62c5f00.css.map": "/static/css/main.a62c5f00.css.map",
-    "main.36869b5d.js.map": "/static/js/main.36869b5d.js.map"
+    "main.63916070.css.map": "/static/css/main.63916070.css.map",
+    "main.bdcd6c95.js.map": "/static/js/main.bdcd6c95.js.map"
   },
   "entrypoints": [
-    "static/css/main.a62c5f00.css",
-    "static/js/main.36869b5d.js"
+    "static/css/main.63916070.css",
+    "static/js/main.bdcd6c95.js"
   ]
 }

@@ -426,7 +426,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="cta">
+        <section className="cta container">
           <h2 data-aos="fade-up" data-aos-duration="1000">
             Want to work with me?
           </h2>

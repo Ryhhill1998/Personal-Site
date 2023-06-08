@@ -152,23 +152,6 @@ section {
   padding-right: 0;
 }
 
-.journey .row .timeline-indicator {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  border: solid 4px black;
-  background-color: white;
-  position: absolute;
-}
-
-.journey .row .container-lhs .timeline-indicator {
-  right: -18px;
-}
-
-.journey .row .container-rhs .timeline-indicator {
-  left: -18px;
-}
-
 .journey .row .timeline-end {
   width: 16px;
   height: 16px;
@@ -356,16 +339,6 @@ h4 {
 
   .journey .row .content-container {
     margin-right: 2em;
-  }
-
-  .journey .row.reverse .container-rhs .timeline-indicator {
-    left: auto;
-    right: -18px;
-  }
-
-  .journey .row.reverse .container-lhs .timeline-indicator {
-    right: auto;
-    left: -18px;
   }
 
   .journey .row .date-container {

@@ -33,6 +33,7 @@ import TimelineDate from "./components/TimelineDate/TimelineDate";
 import TimelineContent from "./components/TimelineContent/TimelineContent";
 import ProjectPreview from "./components/ProjectPreview/ProjectPreview";
 import ContactLink from "./components/ContactLink/ContactLink";
+import TimelineIndicator from "./components/TimelineIndicator/TimelineIndicator";
 AOS.init();
 
 const skills = [
@@ -223,7 +224,8 @@ const App = () => {
                 <div className="date-container container-lhs">
                   <TimelineDate date={"October 2018"} fade="fade-right" />
 
-                  <div className="timeline-indicator"></div>
+                  <TimelineIndicator position="left" />
+
                   <div className="timeline-end"></div>
                 </div>
 
@@ -252,7 +254,7 @@ const App = () => {
                 <div className="date-container container-rhs">
                   <TimelineDate date={"July 2021"} fade="fade-left" />
 
-                  <div className="timeline-indicator"></div>
+                  <TimelineIndicator position="right" reverse={true} />
                 </div>
               </div>
 
@@ -260,7 +262,7 @@ const App = () => {
                 <div className="date-container container-lhs">
                   <TimelineDate date={"September 2022"} fade="fade-right" />
 
-                  <div className="timeline-indicator"></div>
+                  <TimelineIndicator position="left" />
                 </div>
 
                 <div className="content-container container-rhs">
@@ -288,7 +290,8 @@ const App = () => {
                 <div className="date-container container-rhs">
                   <TimelineDate date={"September 2023"} fade="fade-left" />
 
-                  <div className="timeline-indicator"></div>
+                  <TimelineIndicator position="right" reverse={true} />
+
                   <div className="timeline-end"></div>
                 </div>
               </div>

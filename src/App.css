@@ -152,24 +152,6 @@ section {
   padding-right: 0;
 }
 
-.journey .row .timeline-end {
-  width: 16px;
-  height: 16px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.journey .row .container-lhs .timeline-end {
-  right: -11px;
-  bottom: 98%;
-}
-
-.journey .row .container-rhs .timeline-end {
-  left: -11px;
-  top: 98%;
-}
-
 .journey h3 {
   color: var(--primary-theme);
 }
@@ -347,10 +329,5 @@ h4 {
 
   .journey .row .content-container {
     flex-basis: 100%;
-  }
-
-  .journey .row .container-rhs .timeline-end {
-    left: auto;
-    right: -11px;
   }
 }

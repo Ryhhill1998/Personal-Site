@@ -34,6 +34,7 @@ import TimelineContent from "./components/TimelineContent/TimelineContent";
 import ProjectPreview from "./components/ProjectPreview/ProjectPreview";
 import ContactLink from "./components/ContactLink/ContactLink";
 import TimelineIndicator from "./components/TimelineIndicator/TimelineIndicator";
+import TimelineEnd from "./components/TimelineEnd/TimelineEnd";
 AOS.init();
 
 const skills = [
@@ -226,7 +227,7 @@ const App = () => {
 
                   <TimelineIndicator position="left" />
 
-                  <div className="timeline-end"></div>
+                  <TimelineEnd position="left" />
                 </div>
 
                 <div className="content-container container-rhs">
@@ -292,7 +293,7 @@ const App = () => {
 
                   <TimelineIndicator position="right" reverse={true} />
 
-                  <div className="timeline-end"></div>
+                  <TimelineEnd position="right" />
                 </div>
               </div>
             </div>

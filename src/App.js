@@ -32,6 +32,7 @@ import SkillCard from "./components/SkillCard/SkillCard";
 import TimelineDate from "./components/TimelineDate/TimelineDate";
 import TimelineContent from "./components/TimelineContent/TimelineContent";
 import ProjectPreview from "./components/ProjectPreview/ProjectPreview";
+import ContactLink from "./components/ContactLink/ContactLink";
 AOS.init();
 
 const skills = [
@@ -349,33 +350,22 @@ const App = () => {
           <Logo />
 
           <div className="links-container">
-            <a
-              href="https://twitter.com/ryanhenzellhill"
-              target="_blank"
-              className="link"
-            >
-              <FontAwesomeIcon className="icon" icon={faTwitter} />
-            </a>
+            <ContactLink
+              url="https://twitter.com/ryanhenzellhill"
+              icon={faTwitter}
+            />
 
-            <a
-              href="https://www.linkedin.com/in/ryanhenzell-hill"
-              target="_blank"
-              className="link"
-            >
-              <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
-            </a>
+            <ContactLink
+              url="https://www.linkedin.com/in/ryanhenzell-hill"
+              icon={faLinkedinIn}
+            />
 
-            <a
-              href="https://github.com/Ryhhill1998"
-              target="_blank"
-              className="link"
-            >
-              <FontAwesomeIcon className="icon" icon={faGithub} />
-            </a>
+            <ContactLink url="https://github.com/Ryhhill1998" icon={faGithub} />
 
-            <a href="mailto: ryan.henzell-hill@outlook.com" className="link">
-              <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            </a>
+            <ContactLink
+              url="mailto: ryan.henzell-hill@outlook.com"
+              icon={faEnvelope}
+            />
           </div>
 
           <p className="copyright">

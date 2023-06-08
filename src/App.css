@@ -269,31 +269,6 @@ footer .links-container {
   gap: 1em;
 }
 
-footer .links-container .link {
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px var(--primary-theme);
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-footer .links-container .link .icon {
-  color: var(--primary-theme);
-}
-
-footer .links-container .link:hover {
-  background-color: var(--primary-theme);
-}
-
-footer .links-container .link:hover .icon {
-  color: white;
-}
-
 footer .copyright .icon {
   margin-right: 0.5em;
 }

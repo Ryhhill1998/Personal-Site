@@ -12,7 +12,7 @@ const SkillCard = ({
 }) => {
   return (
     <div
-      className="card"
+      className="skill-card"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay={index * 250}

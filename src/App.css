@@ -118,40 +118,6 @@ section {
   gap: 1.5em;
 }
 
-.about .cards-container > * {
-  flex-basis: 32%;
-}
-
-.about .cards-container .card {
-  padding: 2.5em 1.5em;
-  border-radius: 0.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5em;
-  align-items: center;
-  background-color: #f6f1f1;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.about .cards-container .card .description {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.about .cards-container .card .icon-container {
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65px;
-  height: 65px;
-}
-
-.about .cards-container .card .icon-container .icon {
-  color: var(--primary-theme);
-  font-size: 1.5rem;
-}
-
 .journey {
   background-color: #ebf3f7;
   padding-top: 4em;
@@ -410,10 +376,6 @@ h4 {
     flex-wrap: wrap;
   }
 
-  .about .cards-container > * {
-    flex-basis: 48%;
-  }
-
   .projects .previews-container {
     flex-wrap: wrap;
   }
@@ -430,10 +392,6 @@ h4 {
 
   nav > div .nav-links {
     display: none;
-  }
-
-  .about .cards-container > * {
-    flex-basis: 100%;
   }
 
   .intro .background-image p {

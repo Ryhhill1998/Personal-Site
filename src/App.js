@@ -30,6 +30,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Logo from "./components/Logo/Logo";
 import SkillCard from "./components/SkillCard/SkillCard";
+import TimelineDate from "./components/TimelineDate/TimelineDate";
 AOS.init();
 
 const skills = [
@@ -200,9 +201,7 @@ const App = () => {
             <div className="timeline">
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span data-aos="fade-right" data-aos-duration="1000">
-                    October 2018
-                  </span>
+                  <TimelineDate date={"October 2018"} fade="fade-right" />
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>
@@ -229,9 +228,7 @@ const App = () => {
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span data-aos="fade-left" data-aos-duration="1000">
-                    July 2021
-                  </span>
+                  <TimelineDate date={"July 2021"} fade="fade-left" />
 
                   <div className="timeline-indicator"></div>
                 </div>
@@ -239,9 +236,7 @@ const App = () => {
 
               <div className="row">
                 <div className="date-container container-lhs">
-                  <span data-aos="fade-right" data-aos-duration="1000">
-                    September 2022
-                  </span>
+                  <TimelineDate date={"September 2022"} fade="fade-right" />
 
                   <div className="timeline-indicator"></div>
                 </div>
@@ -269,9 +264,7 @@ const App = () => {
                 </div>
 
                 <div className="date-container container-rhs">
-                  <span data-aos="fade-left" data-aos-duration="1000">
-                    September 2023
-                  </span>
+                  <TimelineDate date={"September 2023"} fade="fade-left" />
 
                   <div className="timeline-indicator"></div>
                   <div className="timeline-end"></div>

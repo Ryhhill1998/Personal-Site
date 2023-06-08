@@ -187,17 +187,6 @@ section {
   top: 98%;
 }
 
-.journey .row .content-container > div {
-  background-color: white;
-  border-radius: 0.5em;
-  text-align: left;
-  padding: 1em;
-}
-
-.journey .row .content-container .hidden-date {
-  display: none;
-}
-
 .journey h3 {
   color: var(--primary-theme);
 }
@@ -453,12 +442,5 @@ h4 {
   .journey .row .container-rhs .timeline-end {
     left: auto;
     right: -11px;
-  }
-
-  .journey .row .content-container .hidden-date {
-    display: inline-block;
-    font-size: 1.1rem;
-    margin-bottom: 0.5em;
-    font-weight: 600;
   }
 }

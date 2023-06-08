@@ -31,6 +31,7 @@ import "aos/dist/aos.css";
 import Logo from "./components/Logo/Logo";
 import SkillCard from "./components/SkillCard/SkillCard";
 import TimelineDate from "./components/TimelineDate/TimelineDate";
+import TimelineContent from "./components/TimelineContent/TimelineContent";
 AOS.init();
 
 const skills = [
@@ -208,23 +209,25 @@ const App = () => {
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div data-aos="fade-left" data-aos-duration="1000">
-                    <h3>Durham University</h3>
-                    <p className="hidden-date">June 2021</p>
-                    <p>Chemistry BSc (Hons), Classification: 1st</p>
-                    <p>Learned basic Excel skills</p>
-                  </div>
+                  <TimelineContent
+                    fade={"fade-left"}
+                    title="Durham University"
+                    date="June 2021"
+                    description="Chemistry BSc (Hons), Classification: 1st"
+                    skills="Learned basic Excel skills"
+                  />
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div data-aos="fade-right" data-aos-duration="1000">
-                    <h3>Helena Biosciences</h3>
-                    <p className="hidden-date">July 2021</p>
-                    <p>Technical Support Administrator</p>
-                    <p>Learned VBA and Python to enhance productivity</p>
-                  </div>
+                  <TimelineContent
+                    fade={"fade-right"}
+                    title="Helena Biosciences"
+                    date="July 2021"
+                    description="Technical Support Administrator"
+                    skills="Learned VBA and Python to enhance productivity"
+                  />
                 </div>
 
                 <div className="date-container container-rhs">
@@ -242,25 +245,25 @@ const App = () => {
                 </div>
 
                 <div className="content-container container-rhs">
-                  <div data-aos="fade-left" data-aos-duration="1000">
-                    <h3>Newcastle University</h3>
-                    <p className="hidden-date">September 2022</p>
-                    <p>Computer Science MSc, Classification: Distinction</p>
-                    <p>
-                      Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
-                      Computer Networks
-                    </p>
-                  </div>
+                  <TimelineContent
+                    fade={"fade-left"}
+                    title="Newcastle University"
+                    date="September 2022"
+                    description="Computer Science MSc, Predicted classification: Distinction"
+                    skills="Learned Java, SQL, JavaScript, HTML, CSS, Cybersecurity,
+                    Computer Networks"
+                  />
                 </div>
               </div>
 
               <div className="row reverse">
                 <div className="content-container container-lhs">
-                  <div data-aos="fade-right" data-aos-duration="1000">
-                    <h3>Lloyds Banking Group</h3>
-                    <p className="hidden-date">September 2023</p>
-                    <p>Technology Engineering Graduate</p>
-                  </div>
+                  <TimelineContent
+                    fade={"fade-right"}
+                    title="Lloyds Banking Group"
+                    date="September 2023"
+                    description="Technology Engineering Graduate"
+                  />
                 </div>
 
                 <div className="date-container container-rhs">

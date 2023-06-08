@@ -207,36 +207,6 @@ section {
   gap: 1.5em;
 }
 
-.projects .previews-container .preview {
-  flex-basis: 32%;
-  border-radius: 0.5em;
-  overflow: hidden;
-  cursor: pointer;
-  background-color: black;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects .previews-container .preview span {
-  position: absolute;
-  color: white;
-  font-weight: 600;
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
-.projects .previews-container .preview:hover img {
-  opacity: 0.3;
-}
-
-.projects .previews-container .preview:hover span {
-  visibility: visible;
-}
-
 .cta {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -368,10 +338,6 @@ h4 {
   .projects .previews-container {
     flex-wrap: wrap;
   }
-
-  .projects .previews-container .preview {
-    flex-basis: 48%;
-  }
 }
 
 @media (max-width: 600px) {
@@ -393,10 +359,6 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .projects .previews-container .preview {
-    flex-basis: 100%;
-  }
-
   .journey .timeline .row.reverse {
     flex-direction: row-reverse;
   }

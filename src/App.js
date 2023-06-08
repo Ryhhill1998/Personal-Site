@@ -28,6 +28,7 @@ import { useEffect, useRef, useState } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Logo from "./components/Logo/Logo";
 AOS.init();
 
 const App = () => {
@@ -91,10 +92,7 @@ const App = () => {
       <header style={{ backgroundColor: headerBackgroundColour }}>
         <nav className="container">
           <div>
-            <div className="logo" onClick={handleLogoClick}>
-              <span className="number">25</span>
-              <span className="letter">R</span>
-            </div>
+            <Logo />
 
             <ul className="nav-links">
               <li onClick={() => scrollToSection(aboutRef)}>About</li>
@@ -447,10 +445,7 @@ const App = () => {
 
       <footer>
         <div className="container">
-          <div className="logo">
-            <span className="number">25</span>
-            <span className="letter">R</span>
-          </div>
+          <Logo />
 
           <div className="links-container">
             <a

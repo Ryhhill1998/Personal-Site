@@ -35,6 +35,7 @@ import ProjectPreview from "./components/ProjectPreview/ProjectPreview";
 import ContactLink from "./components/ContactLink/ContactLink";
 import TimelineIndicator from "./components/TimelineIndicator/TimelineIndicator";
 import TimelineEnd from "./components/TimelineEnd/TimelineEnd";
+import SectionHeading from "./components/SectionHeading/SectionHeading";
 AOS.init();
 
 const skills = [
@@ -186,9 +187,7 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2 data-aos="fade-right" data-aos-duration="1000">
-            About Me
-          </h2>
+          <SectionHeading fade="fade-right" text="About Me" colour="primary" />
 
           <p
             className="section-intro"
@@ -216,9 +215,11 @@ const App = () => {
           ></div>
 
           <div className="container">
-            <h2 data-aos="fade-in" data-aos-duration="1000">
-              My Programming Journey
-            </h2>
+            <SectionHeading
+              fade="fade-in"
+              text="My Programming Journey"
+              colour="black"
+            />
 
             <div className="timeline">
               <div className="row">
@@ -306,9 +307,11 @@ const App = () => {
             style={{ position: "absolute", top: "-82px" }}
           ></div>
 
-          <h2 data-aos="fade-right" data-aos-duration="1000">
-            My Projects
-          </h2>
+          <SectionHeading
+            fade="fade-right"
+            text="My Projects"
+            colour="primary"
+          />
 
           <p
             className="section-intro"
@@ -331,9 +334,11 @@ const App = () => {
         </section>
 
         <section className="cta container">
-          <h2 data-aos="fade-up" data-aos-duration="1000">
-            Want to work with me?
-          </h2>
+          <SectionHeading
+            fade="fade-up"
+            text="Want to work with me?"
+            colour="primary"
+          />
 
           <p data-aos="fade-up" data-aos-duration="1000">
             I’m always open to discuss new opportunities.

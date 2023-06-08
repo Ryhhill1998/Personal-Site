@@ -102,10 +102,6 @@ section {
   padding-bottom: 4em;
 }
 
-.about h2 {
-  color: var(--primary-theme);
-}
-
 .section-intro {
   max-width: 600px;
   margin: 0 auto 3em;
@@ -162,10 +158,6 @@ section {
   text-align: center;
 }
 
-.projects h2 {
-  color: var(--primary-theme);
-}
-
 .projects .previews-container {
   display: flex;
   justify-content: center;
@@ -183,7 +175,6 @@ section {
 }
 
 .cta h2 {
-  color: var(--primary-theme);
   margin: 0;
 }
 
@@ -244,14 +235,6 @@ h1 {
   font-family: "Patua One", cursive;
   color: white;
   letter-spacing: 0.05rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: black;
-  margin-bottom: 1em;
   text-align: center;
 }
 

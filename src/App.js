@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
-  faArrowUpRightFromSquare,
   faBars,
   faCode,
   faEnvelope,
@@ -32,6 +31,7 @@ import Logo from "./components/Logo/Logo";
 import SkillCard from "./components/SkillCard/SkillCard";
 import TimelineDate from "./components/TimelineDate/TimelineDate";
 import TimelineContent from "./components/TimelineContent/TimelineContent";
+import ProjectPreview from "./components/ProjectPreview/ProjectPreview";
 AOS.init();
 
 const skills = [
@@ -58,6 +58,24 @@ const skills = [
       "I have recently begun learning Swift and am developing a password manager app for my masters project",
     languages: "Swift",
     frameworks: "UIKit, SwiftUI",
+  },
+];
+
+const projects = [
+  {
+    url: "https://food-fiesta-web-app.netlify.app",
+    imgSrc: foodFiestaPreview,
+    description: "Food Fiesta Web App",
+  },
+  {
+    url: "https://rrsportsmassage.netlify.app/",
+    imgSrc: websitePreview,
+    description: "Sports Massage Website",
+  },
+  {
+    url: "https://ryhhill1998.github.io/PawnsOnlyChessWebApp/",
+    imgSrc: pawnsOnlyChessPreview,
+    description: "Pawns Only Chess Game",
   },
 ];
 
@@ -301,59 +319,9 @@ const App = () => {
           </p>
 
           <div className="previews-container">
-            <a
-              href="https://food-fiesta-web-app.netlify.app"
-              target="_blank"
-              className="preview"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <img src={foodFiestaPreview} />
-
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Food Fiesta Web App
-              </span>
-            </a>
-
-            <a
-              href="https://rrsportsmassage.netlify.app/"
-              target="_blank"
-              className="preview"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <img src={websitePreview} />
-
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Sports Massage Website
-              </span>
-            </a>
-
-            <a
-              href="https://ryhhill1998.github.io/PawnsOnlyChessWebApp/"
-              target="_blank"
-              className="preview"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <img src={pawnsOnlyChessPreview} />
-
-              <span>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faArrowUpRightFromSquare}
-                />
-                Pawns Only Chess Game
-              </span>
-            </a>
+            {projects.map((project, i) => (
+              <ProjectPreview index={i} {...project} />
+            ))}
           </div>
         </section>
 

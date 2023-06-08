@@ -1,6 +1,6 @@
 const TimelineDate = ({ date, fade }) => {
   return (
-    <span data-aos={fade} data-aos-duration="1000">
+    <span className="timeline-date" data-aos={fade} data-aos-duration="1000">
       {date}
     </span>
   );

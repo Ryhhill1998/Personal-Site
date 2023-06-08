@@ -455,10 +455,6 @@ h4 {
     right: -11px;
   }
 
-  .journey .row .date-container span {
-    display: none;
-  }
-
   .journey .row .content-container .hidden-date {
     display: inline-block;
     font-size: 1.1rem;

@@ -1,8 +1,8 @@
 import "./Logo.css";
 
-const Logo = ({ handleLogoClick }) => {
+const Logo = ({ handleClick }) => {
   return (
-    <div className="logo" onClick={handleLogoClick}>
+    <div className="logo" onClick={handleClick}>
       <span className="number">25</span>
       <span className="letter">R</span>
     </div>

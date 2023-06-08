@@ -29,7 +29,35 @@ import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Logo from "./components/Logo/Logo";
+import SkillCard from "./components/SkillCard/SkillCard";
 AOS.init();
+
+const skills = [
+  {
+    icon: faCode,
+    title: "Frontend Developer",
+    description:
+      "I have significant experience building frontend websites, web apps and games",
+    languages: "JavaScript, HTML, CSS, SASS",
+    frameworks: "React Js, jQuery, Tailwind UI",
+  },
+  {
+    icon: faServer,
+    title: "Backend Developer",
+    description:
+      "I have developed several full-stack web apps with user authentication and profiles",
+    languages: "JavaScript",
+    frameworks: "Node Js, Firebase",
+  },
+  {
+    icon: faApple,
+    title: "iOS Developer",
+    description:
+      "I have recently begun learning Swift and am developing a password manager app for my masters project",
+    languages: "Swift",
+    frameworks: "UIKit, SwiftUI",
+  },
+];
 
 const App = () => {
   const aboutRef = useRef();
@@ -42,20 +70,9 @@ const App = () => {
   const [headerBackgroundColour, setHeaderBackgroundColour] = useState(
     "rgba(0, 0, 0, 0.85)"
   );
-  const [animationDelays, setAnimationDelays] = useState([0, 400, 800]);
 
   useEffect(() => {
     setBackgroundImageOpacity(1);
-  }, []);
-
-  useEffect(() => {
-    const { innerWidth } = window;
-
-    if (innerWidth <= 800) {
-      setAnimationDelays([0, 400, 0]);
-    } else if (innerWidth <= 600) {
-      setAnimationDelays([0, 0, 0]);
-    }
   }, []);
 
   const handleLogoClick = () => {
@@ -92,7 +109,7 @@ const App = () => {
       <header style={{ backgroundColor: headerBackgroundColour }}>
         <nav className="container">
           <div>
-            <Logo />
+            <Logo handleClick={handleLogoClick} />
 
             <ul className="nav-links">
               <li onClick={() => scrollToSection(aboutRef)}>About</li>
@@ -163,87 +180,9 @@ const App = () => {
           </p>
 
           <div className="cards-container">
-            <div className="card" data-aos="fade-up" data-aos-duration="1000">
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faCode} />
-              </div>
-
-              <div>
-                <h3>Frontend Developer</h3>
-                <p className="description">
-                  I have significant experience building frontend websites, web
-                  apps and games
-                </p>
-              </div>
-
-              <div>
-                <h4>Languages</h4>
-                <p>JavaScript, HTML, CSS, SASS</p>
-              </div>
-
-              <div>
-                <h4>Frameworks</h4>
-                <p>React Js, jQuery</p>
-              </div>
-            </div>
-
-            <div
-              className="card"
-              data-aos="fade-up"
-              data-aos-delay={animationDelays[1]}
-              data-aos-duration="1000"
-            >
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faServer} />
-              </div>
-
-              <div>
-                <h3>Backend Developer</h3>
-                <p className="description">
-                  I have developed several full-stack web apps with user
-                  authentication and profiles
-                </p>
-              </div>
-
-              <div>
-                <h4>Languages</h4>
-                <p>JavaScript</p>
-              </div>
-
-              <div>
-                <h4>Frameworks/Tools</h4>
-                <p>Node Js, Firebase</p>
-              </div>
-            </div>
-
-            <div
-              className="card"
-              data-aos="fade-up"
-              data-aos-delay={animationDelays[2]}
-              data-aos-duration="1000"
-            >
-              <div className="icon-container">
-                <FontAwesomeIcon className="icon" icon={faApple} />
-              </div>
-
-              <div>
-                <h3>iOS Developer</h3>
-                <p className="description">
-                  I have recently begun learning Swift and am developing a
-                  password manager app for my masters project
-                </p>
-              </div>
-
-              <div>
-                <h4>Languages</h4>
-                <p>Swift</p>
-              </div>
-
-              <div>
-                <h4>Frameworks</h4>
-                <p>UIKit, SwiftUI</p>
-              </div>
-            </div>
+            {skills.map((skill, i) => (
+              <SkillCard index={i} {...skill} />
+            ))}
           </div>
         </section>
 
@@ -389,7 +328,6 @@ const App = () => {
               target="_blank"
               className="preview"
               data-aos="fade-up"
-              data-aos-delay={animationDelays[1]}
               data-aos-duration="1000"
             >
               <img src={websitePreview} />
@@ -408,7 +346,6 @@ const App = () => {
               target="_blank"
               className="preview"
               data-aos="fade-up"
-              data-aos-delay={animationDelays[2]}
               data-aos-duration="1000"
             >
               <img src={pawnsOnlyChessPreview} />
